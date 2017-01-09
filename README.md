@@ -1,13 +1,13 @@
-####Uit welke gemeentes komen eerstejaarsstudenten die naar het hoger onderwijs gaan?
-####Voorstel programmeertheorie
+###Uit welke gemeentes komen eerstejaarsstudenten die naar het hoger onderwijs gaan?
+###Voorstel programmeertheorie
 
-###Lysanne van Beek
-###10544259
+####Lysanne van Beek
+####10544259
 
 Het probleem dat opgelost wordt voor de gebruiker is dat het inzichtelijk gemaakt wordt
 per stad met een (of meerdere) instelling(en)voor hoger onderwijs waar hun eerstejaarsstudenten
 vandaan komen. Blijven de meeste studenten in de buurt van de plek waar ze hun examen hebben gedaan?
-Hoe zit het voor studenten die uit relatief afgelegen gebieden komen als Groningen en Limburg? 
+Zijn er verschillen tussen steden in het aantal studenten met bepaalde profielen?
 Deze visualisatie zal dit hopelijk verhelderen.
 
 De features om dit mogelijk te maken zijn:
