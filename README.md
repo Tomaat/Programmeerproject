@@ -1,8 +1,8 @@
-Uit welke gemeentes komen eerstejaarsstudenten die naar het hoger onderwijs gaan?
-Voorstel programmeertheorie
+####Uit welke gemeentes komen eerstejaarsstudenten die naar het hoger onderwijs gaan?
+####Voorstel programmeertheorie
 
-Lysanne van Beek
-10544259
+###Lysanne van Beek
+###10544259
 
 Het probleem dat opgelost wordt voor de gebruiker is dat het inzichtelijk gemaakt wordt
 per stad met een (of meerdere) instelling(en)voor hoger onderwijs waar hun eerstejaarsstudenten
