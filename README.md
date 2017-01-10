@@ -21,6 +21,8 @@ De features om dit mogelijk te maken zijn:
 - Met behulp van een ander drop down menu kan er gekozen worden om alleen HBO, WO of beide
 niveaus te laten zien (optional).
 
+![](doc/20170109_231719.jpg)
+
 Voor deze visualisatie zal een dataset van DUO gebruikt worden waarin o.a. de gemeentes waar
 eerstejaarsstudenten eindexamen hebben gedaan, hun profielen en de BIN nummers van de onderwijsinstellingen waar
 ze zijn gaan studeren zijn opgenomen: https://duo.nl/open_onderwijsdata/databestanden/stroom/doorstroom-3.jsp 
