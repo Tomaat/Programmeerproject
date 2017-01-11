@@ -20,6 +20,9 @@ De features om dit mogelijk te maken zijn:
 - Met behulp van een drop down menu kunnen er verschillende jaren geselecteerd worden (MVP);
 - Met behulp van een ander drop down menu kan er gekozen worden om alleen HBO, WO of beide
 niveaus te laten zien (optional).
+- Bij het openen van de pagina zijn de default settings de kaart met bolletjes op elke studentenstad (maar zonder
+stromen), een bar graph met de 5 gemeentes waar in totaal de meeste studenten vandaan komen, en in de pie chart
+de verdeling van profielen van alle studenten. Dit is van het meest recente jaar.
 
 ![](doc/20170109_231719.jpg)
 
