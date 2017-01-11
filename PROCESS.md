@@ -18,4 +18,11 @@ maken en die opslaan als json)
 	- Default instellingen maken: voor de bar graph de grootste
 	studentensteden en de pie chart de verdeling van profielen 
 	voor alle studenten.
-- De structuur van de hashtable uitgeschreven.
+- Scripts geschreven om:
+	- De BIN nummers en bijbehorende gemeentes om te zetten naar key:value pairs;
+	- De BIN nummers in de data te veranderen naar gemeentes;
+	- De data om te zetten in een hashtable.
+- Besloten om in plaats van arcs een heat map te maken voor het kaartje,
+aangezien het dan waarschijnlijk overzichtelijker blijft (in plaats van 
+heel veel arcs die door elkaar lopen). Ook kan je met een heat map zien dat veel 
+studenten in hun eigen gemeente blijven, terwijl dit met arcs niet mogelijk is.
