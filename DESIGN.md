@@ -27,14 +27,16 @@ De hashtable zal er dus als volgt uitzien:
 Om de waardes voor elke stad of elk profiel te krijgen kan dit makkelijk en snel
 opgezocht worden. 
 
+#####Kaartje
+Er wordt een kaart geladen met alle gemeenten in Nederland. Gebruikte geojson:
+http://app.nos.nl/datavisualisatie/assets/data/GeoJSON/Gemeentes-2014.geo.json
+
 #####Kaartje en graphs:
 - On click (stad) wordt de data van die stad ingeladen en:
 - De kaart wordt geupdate, nu is te zien waar alle studenten in die stad
-vandaan komen. Gebeurt met een functie make_map. 
-	- Een voorbeeld van hoe dit er uit komt te zien:
-      http://bl.ocks.org/vigorousnorth/e95a867b10de1239ab3a
+vandaan komen. Gebeurt met een functie make_map.
 - De bar graph wordt geupdate, nu zijn de 5 gemeentes waar de meeste studenten
-vandaan komen te zien. Gebeurt met een functie make_bar. 
+vandaan komen te zien. Gebeurt met een functie make_bar.
 - De pie chart wordt geupdate, nu is de verdeling tussen de profielen van alle
-studenten in de aangeklikte stad te zien. Gebeurt met een functie make_pie. 
+studenten in de aangeklikte stad te zien. Gebeurt met een functie make_pie.
 
