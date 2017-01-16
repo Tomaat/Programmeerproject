@@ -5,11 +5,11 @@ import json
 f = open('BRIN.csv', 'rU')  
 
 f.readline()
-bin_naar_gemeente = {}
+brin_naar_gemeente = {}
 
 for line in f:
 	key, value, _ = line.split(";")
-	bin_naar_gemeente[key] = value
+	brin_naar_gemeente[key] = value
 	
 # Parse the CSV into JSON  
 out = json.dumps(bin_naar_gemeente)  

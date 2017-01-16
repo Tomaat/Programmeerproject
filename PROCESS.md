@@ -19,8 +19,8 @@ maken en die opslaan als json)
 	studentensteden en de pie chart de verdeling van profielen 
 	voor alle studenten.
 - Scripts geschreven om:
-	- De BIN nummers en bijbehorende gemeentes om te zetten naar key:value pairs;
-	- De BIN nummers in de data te veranderen naar gemeentes;
+	- De BRIN nummers en bijbehorende gemeentes om te zetten naar key:value pairs;
+	- De BRIN nummers in de data te veranderen naar gemeentes;
 	- De data om te zetten in een hashtable.
 - Besloten om in plaats van arcs een heat map te maken voor het kaartje,
 aangezien het dan waarschijnlijk overzichtelijker blijft (in plaats van 
@@ -34,3 +34,21 @@ studenten in hun eigen gemeente blijven, terwijl dit met arcs niet mogelijk is.
 - Na veel zoeken een geojson gevonden om alle gemeenten én het water in Nederland 
 op een correcte manier te visualiseren.
 - Visualisatie opnieuw uitgetekend (met kleurtjes).
+
+####Dag 5
+- Gepresenteerd en tips gekregen:
+	- Maak een slider voor de jaren ipv een dropdown menu.
+	- In plaats van klikken op een gemeente zou je hem ook kunnen zoeken met een
+	zoekfunctie of aanklikken in een dropdownmenu (lost ook het probleem op
+	met de icoontjes).
+	- Bar chart is eigenlijk dezelfde data gevisualiseerd, is op het randje volgens
+	de docent. Ben ik het niet mee eens, dus goed uitleggen in het verslag waarom
+	hiervoor gekozen.
+	- Misschien nog leuk om als je een universiteitsgemeente aanklikt je wat info
+	krijgt over de universiteit die daar zit.
+- Visualisatie opnieuw uitgetekend.
+
+####Dag 6
+- Datasets (2015, 2014, 2013) omgezet naar json. In 2012 en 2011 waren er andere BRIN
+nummers, dus daar moet ik nog een keer naar kijken.
+- Slider gemaakt voor de jaren.

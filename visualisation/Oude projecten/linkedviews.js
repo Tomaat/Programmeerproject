@@ -3,6 +3,7 @@
     Lysanne van Beek
     10544259 
 **/
+var map
 window.onload = function() {
 
     // define values for pie plot
@@ -17,7 +18,7 @@ window.onload = function() {
         .attr("height", height)
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-    console.log(svg)
+
     // on click, update with new data			
 	d3.selectAll(".m")
 		.on("click", function() {
@@ -32,7 +33,6 @@ window.onload = function() {
 			}
 	
         d3.csv(str, function(error, data) {
-            console.log(data);
             D3_data = {};
             
             for (var i = 0, len = data.length; i < len; i++)
@@ -65,7 +65,7 @@ window.onload = function() {
                 
             map_container.innerHTML = "";
             // make the map
-            var map = new Datamap({
+            map = new Datamap({
                 scope: 'world',
                 element: map_container,
                 projection: 'mercator',
@@ -80,7 +80,7 @@ window.onload = function() {
                     popupTemplate: function(geography, data) {
                         if (!data) return '<div class="hoverinfo">' + geography.properties.name;
                         return '<div class="hoverinfo">' + geography.properties.name + '<br> GDP per capita:  <strong>' +  data.GDP + ' US $' + '</strong>';},
-                    },  
+                    },
                 
                 // list of colours corresponding to the fillKeys
                 fills: {
