@@ -52,3 +52,25 @@ op een correcte manier te visualiseren.
 - Datasets (2015, 2014, 2013) omgezet naar json. In 2012 en 2011 waren er andere BRIN
 nummers, dus daar moet ik nog een keer naar kijken.
 - Slider gemaakt voor de jaren.
+- Topojson aangepast zodat hij een id heeft wat overeenkomt met de data.
+- Begonnen code schrijven om data in de kaart te laden.
+
+####Dag 7
+- De data is ingeladen in de kaart! Op dit moment alleen nog die van Amsterdam om alles
+een beetje overzichtelijk te houden. Het duurde erg lang omdat dit een custom map is van
+Nederland, waardoor in de topojson vanalles aangepast moest worden.
+	- Er blijft nog een probleem met gemeentes als 's Gravenhage, dit moet nog opgelost worden.
+- Er is een hover over met gemeentenaam + aantal studenten.
+- Alle data is omgezet naar het juiste json format.
+- Idee: bucketwaardes uit laten rekenen per gemeente om zo goed mogelijk de verdeling te kunnen zien.
+- Pie plot gemaakt (moet nog verbeterd en verfraaid worden).
+
+####Dag 8
+- Alle gemeentes die irritant deden in de data/toposjon zijn aangepast, hierover geeft hij nu geen
+errors meer.
+- Pie plot heeft hoverdingetjes en mooiere kleuren.
+- Dropdown menu gemaakt met alle studentensteden. Als hier op geklikt wordt veranderem de kaart en
+de pie plot mee.
+- Idee: lijntje naar geselecteerde gemeente trekken zodat je ziet waar de gemeente ligt die je 
+hebt aangeklikt zonder dat er een icoontje over de hele gemeente heen ligt.
+- 

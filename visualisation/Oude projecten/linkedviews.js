@@ -80,7 +80,7 @@ window.onload = function() {
                     popupTemplate: function(geography, data) {
                         if (!data) return '<div class="hoverinfo">' + geography.properties.name;
                         return '<div class="hoverinfo">' + geography.properties.name + '<br> GDP per capita:  <strong>' +  data.GDP + ' US $' + '</strong>';},
-                    },
+                },
                 
                 // list of colours corresponding to the fillKeys
                 fills: {
@@ -102,7 +102,7 @@ window.onload = function() {
                 datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
                 pieplot(D3_data[geography.id]);
             });
-        }
+				}
             })
             map.legend();
             
