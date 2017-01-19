@@ -73,4 +73,8 @@ errors meer.
 de pie plot mee.
 - Idee: lijntje naar geselecteerde gemeente trekken zodat je ziet waar de gemeente ligt die je 
 hebt aangeklikt zonder dat er een icoontje over de hele gemeente heen ligt.
-- 
+
+####Dag 9
+- Bar chart gemaakt, is interactief met slider en dropdown.
+- Flow van de code verbeterd, functies gemaakt voor maken van bar graph en pie plot
+- Legenda verticaal gemaakt.

@@ -43,7 +43,7 @@ window.onload = function() {
 	svg.call(tip);
 
 	// load the data
-	d3.json("../data2_hupsel.json", function(error, data) {
+	d3.json("data2_hupsel.json", function(error, data) {
 
 	data.forEach(function(d) {
 		d.Date = d.Date;
@@ -51,6 +51,7 @@ window.onload = function() {
 	});
 
 	// scale the range of the data
+	console.log(data);
 	x.domain(data.map(function(d) { return d.Date; }));
 	y.domain([0, d3.max(data, function(d) { return d.Amount_of_sunshine; })]);
 
