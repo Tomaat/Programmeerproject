@@ -78,3 +78,19 @@ hebt aangeklikt zonder dat er een icoontje over de hele gemeente heen ligt.
 - Bar chart gemaakt, is interactief met slider en dropdown.
 - Flow van de code verbeterd, functies gemaakt voor maken van bar graph en pie plot
 - Legenda verticaal gemaakt.
+
+####Dag 10
+- Gepresenteerd, tips gekregen:
+	- Gemeentes met een universiteit extra dik omlijnen, geselecteerde gemeente andere kleur omlijning geven.
+	- Iets meer context geven voor de pie chart.
+	- De titels moeten heel duidelijk zijn: het gaat om de oorsprong.
+	- Beter niet ook nog HBO instellingen doen, dat zou iets te veel data zijn.
+	- De getallen zijn nu absoluut, misschien relatief maken (studenten/capita)?
+	- Het zou heel leuk zijn als je het ook nog de andere kant op kan zien: klikken op een gemeente en
+	zien waar mensen zijn gaan studeren.
+	
+####Dag 11
+- Overal waar gemeentenamen te zien zijn, zijn deze niet meer AMSTERDAM maar Amsterdam.
+
+####Dag 12
+

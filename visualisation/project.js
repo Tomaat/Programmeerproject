@@ -4,7 +4,9 @@
     10544259 
 **/
 var data_form, map, gemeente="AMSTERDAM",year, updateBarplot, update_pieplot;
-
+function toSentenceCase(str) {
+	return str.charAt(0) + str.slice(1).toLowerCase();
+}
 function initPieplot() {
 	// define values for pie plot
 	var width_pie = 400,
@@ -66,7 +68,7 @@ function initPieplot() {
 			.attr("x", "0")
 			.attr("y", "100")
 			.style("text-anchor", "middle")
-			.text("Verdeling van profielen van eerstjaarsstudenten in (stad)");
+			.text("Verdeling van profielen die eerstjaarsstudenten in " + toSentenceCase(gemeente) + " op de middelbare school hadden");
 	}
 	
 	return update_pieplot
@@ -104,7 +106,7 @@ function initBarplot() {
 		.attr('class', 'd3-tip')
 		.offset([-10, 0])
 		.html(function(d) {
-			return '<div class="hoverinfo"><strong>' + d.gemeente.toLowerCase() + '<br></strong>' + 'Oorspong van <strong>' + d.studenten + "</strong> studenten";
+			return '<div class="hoverinfo"><strong>' + toSentenceCase(d.gemeente) + '<br></strong>' + 'Oorspong van <strong>' + d.studenten + "</strong> studenten";
 		});
 	
 	svg.call(tip);
@@ -131,7 +133,7 @@ function initBarplot() {
 		}
 
 		// scale the range of the data
-		x.domain(five.map(function(d) { return d.gemeente; }));
+		x.domain(five.map(function(d) { return toSentenceCase(d.gemeente); }));
 		y.domain([0, five[0].studenten]);
 
 		// add x axis
@@ -139,10 +141,6 @@ function initBarplot() {
 			.attr("class", "x axis")
 			.attr("transform", "translate(0," + height + ")")
 			.call(xAxis)
-		.selectAll("text")
-			.style("text-anchor", "end")
-			.attr("dx", "0.5em")
-			.attr("dy", "0.5em")
 
 		// add y axis
 		svg.append("g")
@@ -153,20 +151,28 @@ function initBarplot() {
 			.attr("y", -40)
 			.attr("dy", ".71em")
 			.style("text-anchor", "end")
-			.text("Amount of students");
+			.text("Aantal studenten");
 
 		// add bar chart
 		svg.selectAll("bar")
 			.data(five)
 		.enter().append("rect")
 			.attr("class", "bar")
-			.attr("x", function(d) { return x(d.gemeente); })
+			.attr("x", function(d) { return x(toSentenceCase(d.gemeente)); })
 			.attr("width", x.rangeBand())
 			.attr("y", function(d) { return y(d.studenten); })
 			.attr("height", function(d) { return height - y(d.studenten); })
 			.attr("fill", 'blue')
 			.on('mouseover', tip.show)
 			.on('mouseout', tip.hide);
+			
+		// add graphtitle
+		svg.append("text")
+			.attr("class", "graphtitle")
+			.attr("x", "0")
+			.attr("y", "-5")
+			.style("text-anchor", "right")
+			.text("Top 5 van gemeentes waar eerstejaars studerend in " + toSentenceCase(gemeente) + " vandaan komen");
 	}
 	return updateBarplot
 }
@@ -286,7 +292,6 @@ window.onload = function() {
 				'300 +': '#b10026',
 				defaultFill: 'white'
 			},
-			
 			data: data_form
 		});
 		map.legend();
