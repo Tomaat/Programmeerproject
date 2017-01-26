@@ -37,8 +37,14 @@ fill: green;
     position: relative;
     display: inline-block;
     text-align: center;
+	z-index:500!important;
+	width:100px;
  }
  
  .datamaps-legend dl {
 	text-align: right;
+ }
+
+ h4 {
+	text-align: center;
  }

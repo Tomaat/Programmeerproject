@@ -99,9 +99,9 @@ window.onload = function() {
                 // put the data in the map
                 data: D3_data,
                 done: function(datamap) {
-                datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-                pieplot(D3_data[geography.id]);
-            });
+					datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+					pieplot(D3_data[geography.id]);
+				});
 				}
             })
             map.legend();

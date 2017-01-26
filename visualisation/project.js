@@ -3,15 +3,19 @@
     Lysanne van Beek
     10544259 
 **/
-var data_form, map, gemeente="AMSTERDAM",year, updateBarplot, update_pieplot;
+// globals
+var data_form, map, gemeente="AMSTERDAM",year, updateBarplot, update_pieplot, plaats="Herkomst";
+
+// function to turn "GEMEENTE" into "Gemeente"
 function toSentenceCase(str) {
 	return str.charAt(0) + str.slice(1).toLowerCase();
 }
+
+// function to make initiate pie plot
 function initPieplot() {
-	// define values for pie plot
-	var width_pie = 400,
-		height_pie = 250,
-		radius_pie = 100;
+	var width_pie = 500,
+		height_pie = 300,
+		radius_pie = 120;
 	
 	// make canvas for pie plot
 	var svg = d3.select("#pie_container")
@@ -21,13 +25,20 @@ function initPieplot() {
 		.append("g")
 		.attr("transform", "translate(" + width_pie / 2 + "," + height_pie / 2 + ")");
 		
+	// make tooltip for pie plot
 	var tip = d3.tip()
 		.attr('class', 'd3-tip')
 		.offset([20, 0])
 		.html(function(d) {
-			return '<div class="hoverinfo"><strong>' + d.data.label + "</strong><br>Profiel van " + '<strong>' + d.data.value + "</strong> studenten";
+			if (plaats == "Herkomst") {
+				return '<div class="hoverinfo"><strong>' + d.data.label + "</strong><br>Profiel van " + '<strong>' + d.data.value + "</strong> eerstejaars studerend in " + toSentenceCase(gemeente);
+			}
+			else if (plaats == "Bestemming") {
+				return '<div class="hoverinfo"><strong>' + d.data.label + "</strong><br>Profiel van " + '<strong>' + d.data.value + "</strong> studenten uit " + '//gekozen gemeente//';
+			}
 		})
-		
+	
+	// make the pie pieces
 	var arc = d3.svg.arc()
 		.outerRadius(radius_pie - 10)
 		.innerRadius(0);
@@ -39,13 +50,16 @@ function initPieplot() {
 	var pie = d3.layout.pie()
 		.sort(null)
 		.value(function(d) { return d.value; });
-		
+	
 	svg.call(tip);
 
+	// function to update pie plot
 	function update_pieplot(datapoint) {
 		svg[0][0].innerHTML = "";
 		var data_profielen = []
 		var i = 1;
+		
+		// get a nice colour for every pie piece
 		for (var key in datapoint) {
 			data_profielen[data_profielen.length] = {"label": key, "value": datapoint[key], "color": d3.interpolateYlGn(i++/10)};
 		}
@@ -62,23 +76,29 @@ function initPieplot() {
 			.attr("d", arc)
 			.attr("fill", function(d) { return d.data.color; });
 
-		// add graphtitle
-		svg.append("text")
-			.attr("class", "graphtitle")
-			.attr("x", "0")
-			.attr("y", "100")
-			.style("text-anchor", "middle")
-			.text("Verdeling van profielen die eerstjaarsstudenten in " + toSentenceCase(gemeente) + " op de middelbare school hadden");
+		
+		
+		// add pie graphtitle
+		// var text = svg.append("text")
+			// .attr("class", "graphtitle")
+			// .attr("x", -(width_pie/2))
+			// .attr("y", -120)
+			// .style("text-anchor", "left");
+		if (plaats == "Herkomst") {
+			document.getElementById("pie_title").innerHTML = "Profielen die eerstjaarsstudenten in <br>" + toSentenceCase(gemeente) + " op de middelbare school hadden";
+		}
+		else if (plaats == "Bestemming") {
+			document.getElementById("pie_title").innerHTML = "Profielen die eerstejaarstudenten uit " + toSentenceCase(gemeente) + " op de middelbare school hadden";
+		}
 	}
-	
 	return update_pieplot
 }
 
+// function to initiate bar graph
 function initBarplot() {
-	// set width and height of canvas
-	var margin = {top: 20, right: 20, bottom: 70, left: 40},
-		width = 600 - margin.left - margin.right,
-		height = 300 - margin.top - margin.bottom;
+	var margin = {top: 10, right: 10, bottom: 20, left: 10},
+		width = 500 - margin.left - margin.right,
+		height = 250 - margin.top - margin.bottom;
 
 	// make svg
 	var svg = d3.select("#bar_container")
@@ -102,19 +122,26 @@ function initBarplot() {
 		.orient("left")
 		.ticks(5);
 		
+	// make tooltip
 	var tip = d3.tip()
 		.attr('class', 'd3-tip')
 		.offset([-10, 0])
 		.html(function(d) {
-			return '<div class="hoverinfo"><strong>' + toSentenceCase(d.gemeente) + '<br></strong>' + 'Oorspong van <strong>' + d.studenten + "</strong> studenten";
+			if (plaats == "Herkomst") {
+				return '<div class="hoverinfo"><strong>' + toSentenceCase(d.gemeente) + '<br></strong>' + 'Oorspong van <strong>' + d.studenten + "</strong> studenten";
+			}
+			else if (plaats == "Bestemming") {
+				return '<div class="hoverinfo"><strong>' + toSentenceCase(d.gemeente) + '<br>' + d.studenten + "</strong> studenten gaan hier studeren";
+			}
 		});
 	
 	svg.call(tip);
 
+	// function to update the bargraph
 	function updateBarplot(datapoint) {
 		svg[0][0].innerHTML = "";
 		
-		// select 5 gemeentes with highest number of students and put them in an array of objects
+		// select 5 townships with highest number of students and put them in an array of objects
 		var five = [];
 		for (var i = 0; i < 5; i++) {
 			var max = 0;
@@ -128,6 +155,7 @@ function initBarplot() {
 			five[i] = {'gemeente': cor_key, 'studenten': max};
 			datapoint[cor_key] = 0;
 		}
+		
 		for (var key in five) {
 			datapoint[five[key].gemeente] = five[key].studenten;
 		}
@@ -167,26 +195,50 @@ function initBarplot() {
 			.on('mouseout', tip.hide);
 			
 		// add graphtitle
-		svg.append("text")
-			.attr("class", "graphtitle")
-			.attr("x", "0")
-			.attr("y", "-5")
-			.style("text-anchor", "right")
-			.text("Top 5 van gemeentes waar eerstejaars studerend in " + toSentenceCase(gemeente) + " vandaan komen");
+		// var text = svg.append("text")
+			// .attr("class", "graphtitle")
+			// .attr("x", "-50")
+			// .attr("y", "0")
+			// .style("text-anchor", "right")
+		if (plaats == "Herkomst") {
+			document.getElementById("bar_title").innerHTML = "Top 5 van gemeentes waar eerstejaars <br>studerend in " + toSentenceCase(gemeente) + " vandaan komen";
+		}
+		else if (plaats == "Bestemming") {
+			document.getElementById("bar_title").innerHTML = "Top 5 van gemeentes waar leerlingen <br>uit " + toSentenceCase(gemeente) + " gaan studeren";
+		}
 	}
 	return updateBarplot
 }
 
 window.onload = function() {
+	// save return values
 	update_pieplot = initPieplot();
 	updateBarplot = initBarplot()
     
 	// when dropdown is clicked, change gemeente
 	d3.selectAll(".m")
 		.on("click", function(evt) {
+			document.getElementsByClassName("datamaps-subunit "+gemeente)[0].style["stroke-width"] = "0.4px";
 			gemeente = this.getAttribute("value");
 			selectDataset(evt, year)
+			document.getElementsByClassName("datamaps-subunit "+gemeente)[0].style["stroke-width"] = "3px";
 		});
+	
+	// when toggle is shifted, change 'plaats'. Disable dropdown menu if 'Bestemming' is selected. 
+	$(function() {
+		$("#schuif").change(function(evt) {
+			if ($(this).prop("checked")) {
+				plaats = "Herkomst";
+				$("#dropdown").prop("disabled", false);
+				gemeente = "AMSTERDAM";
+			} else {
+				plaats = "Bestemming";
+				$("#dropdown").prop("disabled", true);
+			}
+			selectDataset(evt, year)
+		});
+	});
+	
 	
 	// select dataset, based on where the slider is pulled
 	timeSlider = d3.select('#slider').call(d3.slider()
@@ -201,21 +253,17 @@ window.onload = function() {
 	function selectDataset(evt, value) {
 		year = value;
 		var str;
-		if(value == "2015"){
-			str = "2015_data.json";
-		}else if(value == "2014"){
-			str = "2014_data.json";
-		}else if(value == "2013"){
-			str = "2013_data.json";
-		}else if(value == "2012"){
-			str = "2012_data2.json"; //fucking javascript
-		}else if(value == "2011"){
-			str = "2011_data.json";
+		if (plaats == 'Herkomst') {
+			str = year+"_data_herkomst.json";
+		}
+		else if (plaats == 'Bestemming') {
+			str = year+"_data_bestemming_2.json";
 		}
 		
-		// update the selected daaset
+		// update the selected dataset
 		d3.json(str, function(error,data) {
 			load_data(error,data);
+			console.log(data_form);
 			map.updateChoropleth(data_form);
 			update_pieplot(data[gemeente]["profiel"]);
 			updateBarplot(data[gemeente]["oorsprong"]);
@@ -230,7 +278,7 @@ window.onload = function() {
 		for (var key in selected_data) {
 		
 			var limits = [1,5,10,25,50,100,200,400];
-			
+			fillKey = '0';
 			if (selected_data[key] >= limits[0] && selected_data[key] < limits[1]) {  fillKey = '1 - 5' }
 			else if (selected_data[key] >= limits[1] && selected_data[key] < limits[2]) {  fillKey = '5 - 10' }
 			else if (selected_data[key] >= limits[2] && selected_data[key] < limits[3]) {  fillKey = '10 - 20' }
@@ -245,7 +293,7 @@ window.onload = function() {
 	}
 
 	// default data setting
-	d3.json("2011_data.json", function(error, data) {
+	d3.json("2011_data_herkomst.json", function(error, data) {
 		year = 2011;
 		load_data(error,data);
 		make_map();
@@ -253,12 +301,20 @@ window.onload = function() {
 		updateBarplot(data[gemeente]["oorsprong"]);
 	});
 
+	if (plaats == "Herkomst") {
+		document.getElementById("map_title").innerHTML = "Herkomst van eerstejaarsstudenten studerend in " + toSentenceCase(gemeente);
+	}
+	else if (plaats == "Bestemming") {
+		document.getElementById("map_title").innerHTML = "Steden waar eerstejaarsstudenten die uit " + toSentenceCase(gemeente) + " komen gaan studeren";
+	}
+	
+	// make the datamaps map
 	function make_map() {
 		map = new Datamap({
 			element: document.getElementById('map_netherlands'),
 			scope: "gemeentes",
 			geographyConfig: {
-				dataUrl: '/gemeentes2.topojson',
+				dataUrl: '/gemeentes3.topojson',
 				borderWidth: 0.4,
 				borderColor: '#4F4F4F',
 				popupTemplate: function(geography, data) {
@@ -267,16 +323,16 @@ window.onload = function() {
 			},
 			
 			setProjection: function(element) {
-			var projection = d3.geo.mercator()
-			 .scale(6500)
-			 .center([0.5, 52.3])
-			 .rotate([-4.8, 0])
-			 .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
-		   
-			var path = d3.geo.path()
-			 .projection(projection);
+				var projection = d3.geo.mercator()
+				 .scale(6300)
+				 .center([0.5, 52.3])
+				 .rotate([-4.8, 0])
+				 .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+			   
+				var path = d3.geo.path()
+				 .projection(projection);
 
-			return {path: path, projection: projection};	
+				return {path: path, projection: projection};	
 			},  
 			
 			// list of colours corresponding to the fillKeys
@@ -292,9 +348,27 @@ window.onload = function() {
 				'300 +': '#b10026',
 				defaultFill: 'white'
 			},
-			data: data_form
+			data: data_form,
+			done: function() {
+					document.getElementsByClassName("datamaps-subunit "+gemeente)[0].style["stroke-width"] = "3px";
+				  }
+			/**
+			if (plaats == "Herkomst") {
+				done: function() {
+					document.getElementsByClassName("datamaps-subunit "+gemeente)[0].style["stroke-width"] = "3px";
+					}
+				}
+			else if (plaats == "Bestemming") {
+				done: function(datamap) {
+					datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+						console.log("bla");
+				}
+			}
+			**/
 		});
 		map.legend();
 	}
-
 }
+
+
+

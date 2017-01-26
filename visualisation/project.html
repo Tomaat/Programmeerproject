@@ -7,44 +7,69 @@ Lysanne van Beek
 
 <html>
 	<head>
+		<!-- datamaps shizzle -->
 		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 		<script src="http://d3js.org/topojson.v1.min.js"></script>
 		<script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+		<!-- tooltip -->
 		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<!-- slider -->
 		<script src="d3.slider.js"></script>
 		<link rel="stylesheet" href="d3.slider.css" />
+		<!-- project javascript & css -->
 		<link rel="stylesheet" type="text/css" href="project.css"/>
+		<script src="project.js"></script>
+		<!-- ?? -->
 		<script src="https://d3js.org/d3-color.v1.min.js"></script>
 		<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
 		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+		<!-- jquery -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- dropdown -->
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- toggle -->
+		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
 	</head>
 	
 	<body>
-		<div class="btn-group pull-right">
-			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-				Stad <span class="caret"></span>
-			</button>
-			<ul class="dropdown-menu" role="menu">
-				<script>
-					var steden = ["Amsterdam", "Delft", "Eindhoven", "Enschede", "Groningen", "Leiden", "Maastricht", "Nijmegen", "Rotterdam", "Tilburg", "Utrecht", "Wageningen"]
-					for (var i = 0, len = steden.length; i < len; i++){
-					document.write('<li><a class="m" value="'+ steden[i].toUpperCase() +'"href="#">'+ steden[i] +'</a></li>');
-					}
-				</script>
-			</ul>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="btn-group pull-left">
+						<button id="dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+							Stad <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu">
+							<script>
+								var steden = ["Amsterdam", "Delft", "Eindhoven", "Enschede", "Groningen", "Leiden", "Maastricht", "Nijmegen", "Rotterdam", "Tilburg", "Utrecht", "Wageningen"]
+								for (var i = 0, len = steden.length; i < len; i++){
+								document.write('<li><a class="m" value="'+ steden[i].toUpperCase() +'"href="#">'+ steden[i] +'</a></li>');
+								}
+							</script>
+						</ul>
+					</div>
+					<input id="schuif" type="checkbox" checked data-toggle="toggle" data-on="Herkomst" data-off="Bestemming" data-onstyle="warning" data-offstyle="danger">
+					<div id="slider" style="width:400px;height:10px; type="range";min="2011";max="2015"step="1"value="2015"></div>
+					<div style="height:40px;"></div>
+					<div id="map_netherlands" style="width:550px;height:500px;">
+						<h4 id="map_title"></h4>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div id="bar_container">
+						<h4 id="bar_title"></h4>
+					</div>
+					<div id="pie_container">
+						<h4 id="pie_title"></h4>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id="map_netherlands" style="width:450px;height:540px;"></div>
-		<div id="dropwdown"></div>
-		<div id="slider" style="width:350px;height:10px; type="range";min="2011";max="2015"step="1"value="2015"></div>
-		<div id="bar_container"></div>
-		<div id="pie_container"></div>
-		<script src="project.js"></script>
 		<div><br><br><br>Lysanne van Beek, 10544259<br><i>Data source:</i> https://duo.nl/open_onderwijsdata/databestanden/stroom/doorstroom-3.jsp </div>
 	</body>
 </html>

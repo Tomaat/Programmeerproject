@@ -1558,10 +1558,10 @@
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;DELFT;WO;techniek;383;Castricum;2
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;DELFT;WO;techniek;503;Delft;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;economie;450;Uitgeest;1
-00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;natuur;373;Bergen (NH.);1
-00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;natuur;373;Bergen;1
+00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;economie;373;Bergen;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;natuur;450;Uitgeest;1
-00ZD;0;383;CASTRICUM;vwo;diploma;nat/gezond;LEIDEN;WO;gedrag en maatschappij;373;Bergen (NH.);1
+00ZD;0;383;CASTRICUM;vwo;diploma;nat/gezond;LEIDEN;WO;gedrag en maatschappij;373;Bergen;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/gezond;ROTTERDAM;WO;gezondheidszorg;383;Castricum;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/gezond;WAGENINGEN;WO;landbouw en natuurlijke omgeving;484;Alphen aan den Rijn;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/gezond;AMSTERDAM;WO;economie;383;Castricum;1
@@ -1594,7 +1594,7 @@
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;399;Heiloo;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;450;Uitgeest;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;383;Castricum;2
-00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;373;Bergen (NH.);1
+00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;373;Bergen;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;383;Castricum;2
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;396;Heemskerk;1
 00ZD;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;399;Heiloo;1
@@ -2077,7 +2077,7 @@
 01GN;0;983;VENLO;vwo;diploma;nat/gezond;UTRECHT;WO;taal en cultuur;983;Venlo;1
 01GN;0;983;VENLO;vwo;diploma;nat/gezond;MAASTRICHT;WO;gezondheidszorg;983;Venlo;1
 01GN;0;983;VENLO;vwo;diploma;nat/gezond;AMSTERDAM;WO;gezondheidszorg;983;Venlo;1
-01GN;0;983;VENLO;vwo;diploma;nat/gezond;NIJMEGEN;WO;gedrag en maatschappij;893;Bergen (L.);1
+01GN;0;983;VENLO;vwo;diploma;nat/gezond;NIJMEGEN;WO;gedrag en maatschappij;893;Bergen;1
 01GN;0;983;VENLO;vwo;diploma;nat/gezond;NIJMEGEN;WO;recht;983;Venlo;1
 01GN;0;983;VENLO;vwo;diploma;ec/maat;UTRECHT;WO;economie;983;Venlo;1
 01GN;0;983;VENLO;vwo;diploma;ec/maat;MAASTRICHT;WO;economie;935;Maastricht;1
@@ -2094,7 +2094,7 @@
 01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;gedrag en maatschappij;268;Nijmegen;1
 01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;gedrag en maatschappij;983;Venlo;2
 01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;recht;885;Arcen en Velden;1
-01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;recht;893;Bergen (L.);1
+01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;recht;893;Bergen;1
 01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;recht;983;Venlo;1
 01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;taal en cultuur;885;Arcen en Velden;1
 01GN;0;983;VENLO;vwo;diploma;cul/maat;NIJMEGEN;WO;taal en cultuur;983;Venlo;3
@@ -2724,13 +2724,13 @@
 01VN;0;268;NIJMEGEN;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;recht;282;Ubbergen;1
 01XF;0;361;ALKMAAR;vwo;diploma;nat/gezond;UTRECHT;WO;gedrag en maatschappij;344;Utrecht;1
 01XF;0;361;ALKMAAR;vwo;diploma;ec/maat;LEIDEN;WO;gedrag en maatschappij;361;Alkmaar;1
-01XF;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+01XF;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen;1
 01XF;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;gedrag en maatschappij;361;Alkmaar;1
 01XF;0;361;ALKMAAR;vwo;diploma;cul/maat;AMSTERDAM;WO;recht;361;Alkmaar;1
 01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;LEIDEN;WO;taal en cultuur;361;Alkmaar;1
 01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;GRONINGEN;WO;gezondheidszorg;14;Groningen;1
 01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;361;Alkmaar;3
-01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;373;Bergen (NH.);1
+01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;373;Bergen;1
 01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;399;Heiloo;1
 01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;ENSCHEDE;WO;techniek;458;Schermer;1
 01XF;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;361;Alkmaar;1
@@ -4363,7 +4363,7 @@
 02QT;0;865;VUGHT;vwo;diploma;ec/maat & cul/maat;TILBURG;WO;economie;788;Haaren;1
 02QT;0;865;VUGHT;vwo;diploma;ec/maat & cul/maat;TILBURG;WO;economie;865;Vught;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech;DELFT;WO;techniek;361;Alkmaar;2
-02QX;0;361;ALKMAAR;vwo;diploma;nat/tech;DELFT;WO;techniek;373;Bergen (NH.);1
+02QX;0;361;ALKMAAR;vwo;diploma;nat/tech;DELFT;WO;techniek;373;Bergen;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech;DELFT;WO;techniek;399;Heiloo;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;361;Alkmaar;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;450;Uitgeest;1
@@ -4371,7 +4371,7 @@
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech;AMSTERDAM;WO;natuur;450;Uitgeest;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/gezond;LEIDEN;WO;gedrag en maatschappij;399;Heiloo;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/gezond;UTRECHT;WO;gezondheidszorg;361;Alkmaar;1
-02QX;0;361;ALKMAAR;vwo;diploma;nat/gezond;UTRECHT;WO;gezondheidszorg;373;Bergen (NH.);1
+02QX;0;361;ALKMAAR;vwo;diploma;nat/gezond;UTRECHT;WO;gezondheidszorg;373;Bergen;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/gezond;AMSTERDAM;WO;economie;399;Heiloo;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/gezond;AMSTERDAM;WO;economie;361;Alkmaar;1
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;LEIDEN;WO;gedrag en maatschappij;365;Graft-De Rijp;1
@@ -4381,9 +4381,9 @@
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;361;Alkmaar;2
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;399;Heiloo;1
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;gedrag en maatschappij;361;Alkmaar;1
-02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen (NH.);1
+02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen;1
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;recht;361;Alkmaar;2
-02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;taal en cultuur;373;Bergen (NH.);1
+02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;taal en cultuur;373;Bergen;1
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;361;Alkmaar;1
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;natuur;361;Alkmaar;1
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;natuur;399;Heiloo;1
@@ -4395,7 +4395,7 @@
 02QX;0;361;ALKMAAR;vwo;diploma;cul/maat;AMSTERDAM;WO;gedrag en maatschappij;363;Amsterdam;1
 02QX;0;361;ALKMAAR;vwo;diploma;cul/maat;AMSTERDAM;WO;taal en cultuur;361;Alkmaar;1
 02QX;0;361;ALKMAAR;vwo;diploma;cul/maat;AMSTERDAM;WO;taal en cultuur;361;Alkmaar;1
-02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;LEIDEN;WO;gedrag en maatschappij;373;Bergen (NH.);1
+02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;LEIDEN;WO;gedrag en maatschappij;373;Bergen;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;LEIDEN;WO;taal en cultuur;361;Alkmaar;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;natuur;344;Utrecht;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;sectoroverstijgend;344;Utrecht;1
@@ -4411,7 +4411,7 @@
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;361;Alkmaar;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;365;Graft-De Rijp;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;365;Graft-De Rijp;1
-02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen (NH.);1
+02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;476;Zijpe;1
 02QX;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;sectoroverstijgend;363;Amsterdam;1
 02QX;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;gedrag en maatschappij;361;Alkmaar;1
@@ -4764,12 +4764,12 @@
 02TC;0;772;EINDHOVEN;vwo;diploma;ec/maat & cul/maat;TILBURG;WO;sectoroverstijgend;855;Tilburg;1
 02TC;0;772;EINDHOVEN;vwo;diploma;ec/maat & cul/maat;TILBURG;WO;taal en cultuur;855;Tilburg;1
 02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;LEIDEN;WO;natuur;395;Harenkarspel;1
-02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;LEIDEN;WO;recht;373;Bergen (NH.);1
-02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;LEIDEN;WO;sectoroverstijgend;373;Bergen (NH.);1
+02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;LEIDEN;WO;recht;373;Bergen;1
+02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;LEIDEN;WO;sectoroverstijgend;373;Bergen;1
 02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;DELFT;WO;techniek;361;Alkmaar;1
 02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;DELFT;WO;techniek;416;Langedijk;1
 02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;361;Alkmaar;1
-02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;373;Bergen (NH.);1
+02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;373;Bergen;1
 02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;772;Eindhoven;4
 02TD;0;361;ALKMAAR;vwo;diploma;nat/tech;AMSTERDAM;WO;natuur;416;Langedijk;1
 02TD;0;361;ALKMAAR;vwo;diploma;nat/gezond;LEIDEN;WO;gedrag en maatschappij;361;Alkmaar;1
@@ -4799,7 +4799,7 @@
 02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;natuur;416;Langedijk;1
 02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;recht;361;Alkmaar;1
 02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;recht;416;Langedijk;1
-02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen;1
 02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;416;Langedijk;1
 02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;gedrag en maatschappij;416;Langedijk;1
 02TD;0;361;ALKMAAR;vwo;diploma;ec/maat;AMSTERDAM;WO;sectoroverstijgend;363;Amsterdam;1
@@ -11275,29 +11275,29 @@
 16SL;0;917;HEERLEN;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;recht;962;Schinnen;1
 16SL;0;917;HEERLEN;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;taal en cultuur;268;Nijmegen;1
 16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;DELFT;WO;techniek;503;Delft;1
-16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen (NH.);1
-16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;gezondheidszorg;373;Bergen (NH.);2
-16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;natuur;373;Bergen (NH.);1
-16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen (NH.);1
+16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen;1
+16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;gezondheidszorg;373;Bergen;2
+16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;natuur;373;Bergen;1
+16ST;0;373;BERGEN NH;vwo;diploma;nat/gezond;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen;1
 16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;LEIDEN;WO;recht;361;Alkmaar;1
 16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;ROTTERDAM;WO;economie;599;Rotterdam;1
 16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;361;Alkmaar;1
 16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;365;Graft-De Rijp;1
-16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen;1
 16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;natuur;395;Harenkarspel;2
 16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;taal en cultuur;363;Amsterdam;1
-16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+16ST;0;373;BERGEN NH;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;373;Bergen;1
 16ST;0;373;BERGEN NH;vwo;diploma;cul/maat;AMSTERDAM;WO;taal en cultuur;361;Alkmaar;2
 16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;LEIDEN;WO;natuur;395;Harenkarspel;2
 16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;GRONINGEN;WO;natuur;14;Groningen;1
 16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;361;Alkmaar;1
 16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;503;Delft;2
 16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;ENSCHEDE;WO;techniek;153;Enschede;1
-16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;ENSCHEDE;WO;techniek;373;Bergen (NH.);1
-16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;ENSCHEDE;WO;techniek;373;Bergen;1
+16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;economie;373;Bergen;1
 16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;economie;395;Harenkarspel;1
-16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;373;Bergen (NH.);1
-16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen (NH.);1
+16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;373;Bergen;1
+16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen;1
 16ST;0;373;BERGEN NH;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;sectoroverstijgend;363;Amsterdam;1
 16SW;0;1702;SINT ANTHONIS;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;984;Venray;2
 16SW;0;1702;SINT ANTHONIS;vwo;diploma;nat/tech;EINDHOVEN;WO;techniek;1702;Sint Anthonis;1
@@ -11333,7 +11333,7 @@
 16TS;2;392;HAARLEM;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;gedrag en maatschappij;392;Haarlem;1
 16TS;2;392;HAARLEM;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;natuur;397;Heemstede;1
 16TS;2;392;HAARLEM;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;taal en cultuur;393;Haarlemmerliede en Spaarnwoude;1
-16TS;3;373;BERGEN NH;vwo;diploma;nat/tech;AMSTERDAM;WO;gezondheidszorg;373;Bergen (NH.);1
+16TS;3;373;BERGEN NH;vwo;diploma;nat/tech;AMSTERDAM;WO;gezondheidszorg;373;Bergen;1
 16TS;3;373;BERGEN NH;vwo;diploma;ec/maat;MAASTRICHT;WO;sectoroverstijgend;361;Alkmaar;1
 16TV;0;518;S GRAVENHAGE;vwo;diploma;nat/gezond;NIJMEGEN;WO;gedrag en maatschappij;209;Beuningen;1
 16TV;0;518;S GRAVENHAGE;vwo;diploma;cul/maat;LEIDEN;WO;taal en cultuur;503;Delft;2
@@ -12056,9 +12056,9 @@
 17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;AMSTERDAM;WO;natuur;362;Amstelveen;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;NIJMEGEN;WO;gedrag en maatschappij;756;Boxmeer;2
 17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;NIJMEGEN;WO;gezondheidszorg;756;Boxmeer;1
-17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;NIJMEGEN;WO;gezondheidszorg;893;Bergen (L.);1
+17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;NIJMEGEN;WO;gezondheidszorg;893;Bergen;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;NIJMEGEN;WO;gezondheidszorg;1702;Sint Anthonis;1
-17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;NIJMEGEN;WO;natuur;893;Bergen (L.);1
+17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;NIJMEGEN;WO;natuur;893;Bergen;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/gezond;TILBURG;WO;economie;855;Tilburg;1
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;ROTTERDAM;WO;economie;756;Boxmeer;1
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;EINDHOVEN;WO;techniek;756;Boxmeer;1
@@ -12066,7 +12066,7 @@
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;MAASTRICHT;WO;economie;756;Boxmeer;1
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;MAASTRICHT;WO;economie;907;Gennep;1
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;NIJMEGEN;WO;economie;907;Gennep;3
-17HN;0;756;BOXMEER;vwo;diploma;ec/maat;NIJMEGEN;WO;gedrag en maatschappij;893;Bergen (L.);1
+17HN;0;756;BOXMEER;vwo;diploma;ec/maat;NIJMEGEN;WO;gedrag en maatschappij;893;Bergen;1
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;NIJMEGEN;WO;recht;1684;Cuijk;2
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;NIJMEGEN;WO;taal en cultuur;756;Boxmeer;1
 17HN;0;756;BOXMEER;vwo;diploma;ec/maat;NIJMEGEN;WO;taal en cultuur;1702;Sint Anthonis;1
@@ -12074,13 +12074,13 @@
 17HN;0;756;BOXMEER;vwo;diploma;cul/maat;UTRECHT;WO;natuur;355;Zeist;1
 17HN;0;756;BOXMEER;vwo;diploma;cul/maat;WAGENINGEN;WO;landbouw en natuurlijke omgeving;756;Boxmeer;1
 17HN;0;756;BOXMEER;vwo;diploma;cul/maat;NIJMEGEN;WO;recht;756;Boxmeer;2
-17HN;0;756;BOXMEER;vwo;diploma;cul/maat;NIJMEGEN;WO;taal en cultuur;893;Bergen (L.);1
+17HN;0;756;BOXMEER;vwo;diploma;cul/maat;NIJMEGEN;WO;taal en cultuur;893;Bergen;1
 17HN;0;756;BOXMEER;vwo;diploma;cul/maat;NIJMEGEN;WO;taal en cultuur;1702;Sint Anthonis;1
-17HN;0;756;BOXMEER;vwo;diploma;cul/maat;TILBURG;WO;gedrag en maatschappij;893;Bergen (L.);1
+17HN;0;756;BOXMEER;vwo;diploma;cul/maat;TILBURG;WO;gedrag en maatschappij;893;Bergen;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;gezondheidszorg;756;Boxmeer;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;EINDHOVEN;WO;techniek;756;Boxmeer;3
 17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;EINDHOVEN;WO;techniek;772;Eindhoven;1
-17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;EINDHOVEN;WO;techniek;893;Bergen (L.);1
+17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;EINDHOVEN;WO;techniek;893;Bergen;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;EINDHOVEN;WO;techniek;1702;Sint Anthonis;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;ENSCHEDE;WO;techniek;153;Enschede;1
 17HN;0;756;BOXMEER;vwo;diploma;nat/tech & nat/gezond;WAGENINGEN;WO;landbouw en natuurlijke omgeving;289;Wageningen;1
@@ -13346,7 +13346,7 @@
 19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;EINDHOVEN;WO;techniek;934;Maasbree;1
 19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;WAGENINGEN;WO;landbouw en natuurlijke omgeving;228;Ede;1
 19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;WAGENINGEN;WO;landbouw en natuurlijke omgeving;289;Wageningen;1
-19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;WAGENINGEN;WO;landbouw en natuurlijke omgeving;893;Bergen (L.);1
+19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;WAGENINGEN;WO;landbouw en natuurlijke omgeving;893;Bergen;1
 19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;MAASTRICHT;WO;gezondheidszorg;935;Maastricht;3
 19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;MAASTRICHT;WO;gezondheidszorg;983;Venlo;1
 19HR;0;983;VENLO;vwo;diploma;nat/tech & nat/gezond;NIJMEGEN;WO;gezondheidszorg;268;Nijmegen;1
@@ -13850,7 +13850,7 @@
 19ZQ;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;361;Alkmaar;1
 19ZQ;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;384;Diemen;1
 19ZQ;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;361;Alkmaar;1
-19ZQ;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen (NH.);1
+19ZQ;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen;1
 19ZQ;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;361;Alkmaar;1
 19ZQ;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;gedrag en maatschappij;546;Leiden;1
 19ZU;0;512;GORINCHEM;vwo;diploma;nat/tech;LEIDEN;WO;natuur;546;Leiden;1
@@ -13934,7 +13934,7 @@
 20AA;0;361;ALKMAAR;vwo;diploma;nat/gezond;AMSTERDAM;WO;natuur;399;Heiloo;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/gezond;AMSTERDAM;WO;natuur;400;Den Helder;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/gezond;NIJMEGEN;WO;taal en cultuur;0;elders buiten NED;1
-20AA;0;361;ALKMAAR;vwo;diploma;ec/maat;LEIDEN;WO;gedrag en maatschappij;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;ec/maat;LEIDEN;WO;gedrag en maatschappij;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;cul/maat;LEIDEN;WO;gedrag en maatschappij;399;Heiloo;1
 20AA;0;361;ALKMAAR;vwo;diploma;cul/maat;LEIDEN;WO;taal en cultuur;361;Alkmaar;2
 20AA;0;361;ALKMAAR;vwo;diploma;cul/maat;LEIDEN;WO;taal en cultuur;546;Leiden;1
@@ -13953,7 +13953,7 @@
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;natuur;344;Utrecht;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;natuur;361;Alkmaar;2
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;natuur;398;Heerhugowaard;1
-20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;ROTTERDAM;WO;gezondheidszorg;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;ROTTERDAM;WO;gezondheidszorg;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;361;Alkmaar;3
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;370;Beemster;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;DELFT;WO;techniek;399;Heiloo;1
@@ -13962,37 +13962,37 @@
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;ENSCHEDE;WO;techniek;412;Niedorp;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;WAGENINGEN;WO;landbouw en natuurlijke omgeving;289;Wageningen;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;MAASTRICHT;WO;recht;361;Alkmaar;1
-20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;economie;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;399;Heiloo;2
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gezondheidszorg;450;Uitgeest;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;361;Alkmaar;5
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;363;Amsterdam;1
-20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;399;Heiloo;3
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;439;Purmerend;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;479;Zaanstad;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;558;Wester-Koggenland;1
-20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;sectoroverstijgend;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;sectoroverstijgend;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;taal en cultuur;361;Alkmaar;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;taal en cultuur;450;Uitgeest;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;gedrag en maatschappij;458;Schermer;1
 20AA;0;361;ALKMAAR;vwo;diploma;nat/tech & nat/gezond;NIJMEGEN;WO;natuur;268;Nijmegen;1
-20AA;0;361;ALKMAAR;vwo;diploma;nat/gezond & ec/maat;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;nat/gezond & ec/maat;AMSTERDAM;WO;gedrag en maatschappij;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;recht;366;Anna Paulowna;1
-20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;recht;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;recht;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;sectoroverstijgend;518;s-Gravenhage;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;taal en cultuur;546;Leiden;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;GRONINGEN;WO;gedrag en maatschappij;14;Groningen;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;MAASTRICHT;WO;gedrag en maatschappij;935;Maastricht;1
-20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;economie;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;economie;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;economie;384;Diemen;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;economie;399;Heiloo;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;gedrag en maatschappij;395;Harenkarspel;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;recht;361;Alkmaar;2
-20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;recht;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;recht;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;sectoroverstijgend;361;Alkmaar;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;taal en cultuur;361;Alkmaar;1
-20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;taal en cultuur;373;Bergen (NH.);1
+20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;taal en cultuur;373;Bergen;1
 20AA;0;361;ALKMAAR;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;gedrag en maatschappij;363;Amsterdam;1
 20AB;0;503;DELFT;vwo;diploma;nat/tech;ROTTERDAM;WO;economie;518;s-Gravenhage;1
 20AB;0;503;DELFT;vwo;diploma;nat/tech;DELFT;WO;techniek;503;Delft;5
@@ -16647,7 +16647,7 @@
 20MH;0;383;CASTRICUM;vwo;diploma;nat/tech;DELFT;WO;techniek;503;Delft;1
 20MH;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;economie;399;Heiloo;1
 20MH;0;383;CASTRICUM;vwo;diploma;nat/tech;AMSTERDAM;WO;natuur;383;Castricum;1
-20MH;0;383;CASTRICUM;vwo;diploma;nat/gezond;LEIDEN;WO;gezondheidszorg;373;Bergen (NH.);1
+20MH;0;383;CASTRICUM;vwo;diploma;nat/gezond;LEIDEN;WO;gezondheidszorg;373;Bergen;1
 20MH;0;383;CASTRICUM;vwo;diploma;nat/gezond;LEIDEN;WO;taal en cultuur;383;Castricum;1
 20MH;0;383;CASTRICUM;vwo;diploma;nat/gezond;UTRECHT;WO;natuur;396;Heemskerk;1
 20MH;0;383;CASTRICUM;vwo;diploma;nat/gezond;ENSCHEDE;WO;techniek;153;Enschede;1
@@ -16671,7 +16671,7 @@
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat;AMSTERDAM;WO;sectoroverstijgend;383;Castricum;1
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat;AMSTERDAM;WO;economie;399;Heiloo;1
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat;AMSTERDAM;WO;gedrag en maatschappij;399;Heiloo;1
-20MH;0;383;CASTRICUM;vwo;diploma;cul/maat;LEIDEN;WO;gedrag en maatschappij;373;Bergen (NH.);1
+20MH;0;383;CASTRICUM;vwo;diploma;cul/maat;LEIDEN;WO;gedrag en maatschappij;373;Bergen;1
 20MH;0;383;CASTRICUM;vwo;diploma;cul/maat;UTRECHT;WO;recht;450;Uitgeest;1
 20MH;0;383;CASTRICUM;vwo;diploma;cul/maat;AMSTERDAM;WO;taal en cultuur;383;Castricum;2
 20MH;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;LEIDEN;WO;gezondheidszorg;383;Castricum;1
@@ -16688,7 +16688,7 @@
 20MH;0;383;CASTRICUM;vwo;diploma;nat/tech & nat/gezond;AMSTERDAM;WO;natuur;383;Castricum;1
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;gedrag en maatschappij;383;Castricum;1
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;recht;383;Castricum;2
-20MH;0;383;CASTRICUM;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;taal en cultuur;373;Bergen (NH.);1
+20MH;0;383;CASTRICUM;vwo;diploma;ec/maat & cul/maat;LEIDEN;WO;taal en cultuur;373;Bergen;1
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat & cul/maat;UTRECHT;WO;gedrag en maatschappij;383;Castricum;1
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat & cul/maat;ROTTERDAM;WO;economie;599;Rotterdam;1
 20MH;0;383;CASTRICUM;vwo;diploma;ec/maat & cul/maat;ROTTERDAM;WO;gedrag en maatschappij;383;Castricum;1
@@ -18559,7 +18559,7 @@
 25FY;0;984;VENRAY;vwo;diploma;nat/gezond;NIJMEGEN;WO;gedrag en maatschappij;984;Venray;2
 25FY;0;984;VENRAY;vwo;diploma;nat/gezond;NIJMEGEN;WO;gezondheidszorg;756;Boxmeer;1
 25FY;0;984;VENRAY;vwo;diploma;nat/gezond;NIJMEGEN;WO;recht;984;Venray;1
-25FY;0;984;VENRAY;vwo;diploma;nat/gezond;NIJMEGEN;WO;taal en cultuur;893;Bergen (L.);1
+25FY;0;984;VENRAY;vwo;diploma;nat/gezond;NIJMEGEN;WO;taal en cultuur;893;Bergen;1
 25FY;0;984;VENRAY;vwo;diploma;ec/maat;LEIDEN;WO;gedrag en maatschappij;546;Leiden;1
 25FY;0;984;VENRAY;vwo;diploma;ec/maat;EINDHOVEN;WO;techniek;984;Venray;1
 25FY;0;984;VENRAY;vwo;diploma;ec/maat;WAGENINGEN;WO;landbouw en natuurlijke omgeving;289;Wageningen;1
@@ -18571,7 +18571,7 @@
 25FY;0;984;VENRAY;vwo;diploma;cul/maat;ROTTERDAM;WO;gedrag en maatschappij;599;Rotterdam;1
 25FY;0;984;VENRAY;vwo;diploma;cul/maat;ENSCHEDE;WO;gedrag en maatschappij;984;Venray;1
 25FY;0;984;VENRAY;vwo;diploma;cul/maat;NIJMEGEN;WO;gedrag en maatschappij;984;Venray;1
-25FY;0;984;VENRAY;vwo;diploma;cul/maat;NIJMEGEN;WO;taal en cultuur;893;Bergen (L.);1
+25FY;0;984;VENRAY;vwo;diploma;cul/maat;NIJMEGEN;WO;taal en cultuur;893;Bergen;1
 25FY;0;984;VENRAY;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;gedrag en maatschappij;756;Boxmeer;1
 25FY;0;984;VENRAY;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;natuur;984;Venray;1
 25FY;0;984;VENRAY;vwo;diploma;nat/tech & nat/gezond;UTRECHT;WO;sectoroverstijgend;344;Utrecht;1
@@ -18594,8 +18594,8 @@
 25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;AMSTERDAM;WO;taal en cultuur;363;Amsterdam;1
 25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;economie;984;Venray;2
 25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;gedrag en maatschappij;984;Venray;1
-25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;recht;893;Bergen (L.);1
-25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;taal en cultuur;893;Bergen (L.);1
+25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;recht;893;Bergen;1
+25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;taal en cultuur;893;Bergen;1
 25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;NIJMEGEN;WO;taal en cultuur;984;Venray;4
 25FY;0;984;VENRAY;vwo;diploma;ec/maat & cul/maat;TILBURG;WO;gedrag en maatschappij;984;Venray;1
 25GA;0;637;ZOETERMEER;vwo;diploma;nat/tech;DELFT;WO;techniek;493;Berkel en Rodenrijs;1

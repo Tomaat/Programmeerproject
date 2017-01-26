@@ -93,4 +93,14 @@ hebt aangeklikt zonder dat er een icoontje over de hele gemeente heen ligt.
 - Overal waar gemeentenamen te zien zijn, zijn deze niet meer AMSTERDAM maar Amsterdam.
 
 ####Dag 12
+- Bugs gefixt: gemeentes waar geen studenten vandaan komen hebben nu als value 0, in plaats van geen value.
+- De data om het 'omgekeerd' ook te laten zien is nu in het goede json format.
+- Idee: ipv de data voor 'omgekeerd' (waar zijn mensen uit deze gemeente gaan studeren) in de map te weergeven:
+een bar of pie chart maken.
+
+####Dag 13
+- Alle data voor bestemmingen omgezet naar jsons.
+- Toggle knop gemaakt om te kiezen tussen herkomst en bestemming, werkt voor pie en graph.
+- Bug fix: toggle knop maakte de datamap kapot, gefixt.
+- Variabele titels en tooltips voor de graphs gemaakt, afhankelijk van bestemming of herkomst.
 
