@@ -34,7 +34,7 @@ function initPieplot() {
 				return '<div class="hoverinfo"><strong>' + d.data.label + "</strong><br>Profiel van " + '<strong>' + d.data.value + "</strong> eerstejaars studerend in " + toSentenceCase(gemeente);
 			}
 			else if (plaats == "Bestemming") {
-				return '<div class="hoverinfo"><strong>' + d.data.label + "</strong><br>Profiel van " + '<strong>' + d.data.value + "</strong> studenten uit " + '//gekozen gemeente//';
+				return '<div class="hoverinfo"><strong>' + d.data.label + "</strong><br>Profiel van " + '<strong>' + d.data.value + "</strong> studenten uit " + toSentenceCase(gemeente);
 			}
 		})
 	

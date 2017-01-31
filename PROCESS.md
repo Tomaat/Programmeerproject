@@ -104,3 +104,18 @@ een bar of pie chart maken.
 - Bug fix: toggle knop maakte de datamap kapot, gefixt.
 - Variabele titels en tooltips voor de graphs gemaakt, afhankelijk van bestemming of herkomst.
 
+####Dag 14
+- Video (1h) gekeken over bootstrap.
+- Opmaak van de pagina wat verbeterd.
+
+####Dag 15
+- Gepresenteerd, tips gekregen:
+	- Kleuren nog wat aanpassen
+	- Misschien een kort uitlegje op de pagina hoe je de visualisatie kan gebruiken
+
+####Dag 16
+- Begonnen aan het verslag
+
+####Dag 17
+- 
+	
