@@ -1,0 +1,79 @@
+/*  project.css
+    Programmeerproject 2017
+    Lysanne van Beek
+    10544259    */
+	
+.bar{
+fill: steelblue;
+}
+
+.bar:hover{
+fill: blue;
+}
+
+.pizza:hover{
+fill: green;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.datamaps-legend dt{
+  clear:both;
+  width:70px;
+}
+.datamaps-legend {
+    color: black;
+    right: -100px;
+    top: 128px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+	z-index:500!important;
+	width:100px;
+ }
+ 
+ .datamaps-legend dl {
+	text-align: right;
+ }
+
+ h4 {
+	text-align: center;
+ }
+ 
+ .legend rect {
+	fill:white;
+	stroke:black;}
+  
+ .header {
+	background-color: antiquewhite;
+	height: 60px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	font-size: 20px;
+	font-weight: bold;
+ }
+ 
+ .footer {
+	background-color: antiquewhite;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	height: 30px;
+ }
+ 
+ .hoverinfo {
+	width: 200px;
+ }
+ 
+ .break {
+	height:70px;
+ }

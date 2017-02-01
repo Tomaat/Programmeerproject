@@ -27,7 +27,12 @@ disables.
 ![](doc/20170113_113835.jpg)
 
 Voor het creeëren van deze visualisatie is gebruik gemaakt van de volgende bronnen:
-- De data:  https://duo.nl/open_onderwijsdata/databestanden/stroom/doorstroom-3.jsp
+Voor de data:
+- DUO:  https://duo.nl/open_onderwijsdata/databestanden/stroom/doorstroom-3.jsp
+
+Voor de visualisaties (NB: deze materialen hebben ook hun eigen licenses):
 - De tooltips: http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js
 - De slider: https://github.com/MasterMaps/d3-slider/blob/master/index.html
 - De legenda van de pie chart: http://bl.ocks.org/wayneminton/a12b563819b04a3555aa
+
+Copyright Lysanne van Beek, 2017

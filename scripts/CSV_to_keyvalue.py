@@ -1,3 +1,5 @@
+# Lysanne van Beek, 2017
+
 import csv  
 import json  
 
