@@ -51,7 +51,6 @@ window.onload = function() {
 	});
 
 	// scale the range of the data
-	console.log(data);
 	x.domain(data.map(function(d) { return d.Date; }));
 	y.domain([0, d3.max(data, function(d) { return d.Amount_of_sunshine; })]);
 

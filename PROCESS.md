@@ -69,7 +69,7 @@ Nederland, waardoor in de topojson vanalles aangepast moest worden.
 - Alle gemeentes die irritant deden in de data/toposjon zijn aangepast, hierover geeft hij nu geen
 errors meer.
 - Pie plot heeft hoverdingetjes en mooiere kleuren.
-- Dropdown menu gemaakt met alle studentensteden. Als hier op geklikt wordt veranderem de kaart en
+- Dropdown menu gemaakt met alle studentensteden. Als hier op geklikt wordt veranderen de kaart en
 de pie plot mee.
 - Idee: lijntje naar geselecteerde gemeente trekken zodat je ziet waar de gemeente ligt die je 
 hebt aangeklikt zonder dat er een icoontje over de hele gemeente heen ligt.
@@ -85,7 +85,7 @@ hebt aangeklikt zonder dat er een icoontje over de hele gemeente heen ligt.
 	- Iets meer context geven voor de pie chart.
 	- De titels moeten heel duidelijk zijn: het gaat om de oorsprong.
 	- Beter niet ook nog HBO instellingen doen, dat zou iets te veel data zijn.
-	- De getallen zijn nu absoluut, misschien relatief maken (studenten/capita)?
+	- Idee: De getallen zijn nu absoluut, misschien relatief maken (studenten/capita)?
 	- Het zou heel leuk zijn als je het ook nog de andere kant op kan zien: klikken op een gemeente en
 	zien waar mensen zijn gaan studeren.
 	
@@ -106,7 +106,7 @@ een bar of pie chart maken.
 
 ####Dag 14
 - Video (1h) gekeken over bootstrap.
-- Opmaak van de pagina wat verbeterd.
+- Opmaak van de pagina wat verbeterd: nu staan de bar en pie graph mooi onder elkaar, naast het kaartje.
 
 ####Dag 15
 - Gepresenteerd, tips gekregen:
@@ -115,7 +115,11 @@ een bar of pie chart maken.
 
 ####Dag 16
 - Begonnen aan het verslag
+- Bezig geweest om als je op een gemeente klikt, je ziet waar mensen zijn gaan studeren. Is nog
+niet gelukt.
 
 ####Dag 17
-- 
+- Bestemming werkt nu als je op een gemeente klikt.
+- Legenda voor pie chart gemaakt
+- Kleuren van de legenda veranderd (nu meer verschillend)
 	

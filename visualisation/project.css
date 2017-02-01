@@ -48,3 +48,32 @@ fill: green;
  h4 {
 	text-align: center;
  }
+ 
+ .legend rect {
+	fill:white;
+	stroke:black;}
+  
+ .header {
+	background-color: antiquewhite;
+	height: 60px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	font-size: 20px;
+	font-weight: bold;
+ }
+ 
+ .footer {
+	background-color: antiquewhite;
+	text-align: center;
+	font-family: "Helvetica Neue";
+	height: 30px;
+ }
+ 
+ .hoverinfo {
+	width: 200px;
+ }
+ 
+ .break {
+	height:70px;
+ }

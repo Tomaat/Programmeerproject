@@ -32,3 +32,10 @@ ze zijn gaan studeren zijn opgenomen: https://duo.nl/open_onderwijsdata/databest
 Om de BIN nummers naar gemeentes om te zetten zal nog gezocht moeten worden naar een bestand dat
 de BIN nummers en corresponderende onderwijsinstellingen en gemeentes bevat.
 
+legenda pie chart:
+http://bl.ocks.org/wayneminton/a12b563819b04a3555aa
+slider:
+http://thematicmapping.org/playground/d3/d3.slider/
+https://github.com/MasterMaps/d3-slider/blob/master/index.html
+Tooltips
+http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js

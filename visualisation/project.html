@@ -34,12 +34,20 @@ Lysanne van Beek
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+		<script src="d3.legend.js"></script>
+		<!-- <link href="grayscale.min.css" rel="stylesheet"> -->
 	</head>
 	
 	<body>
+		<header>
+			<div class="header">
+				De herkomst, bestemming en gekozen profielen van eerstejaarsstudenten in het WO
+			</div>
+		</header>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
 					<div class="btn-group pull-left">
 						<button id="dropdown" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
 							Stad <span class="caret"></span>
@@ -53,9 +61,17 @@ Lysanne van Beek
 							</script>
 						</ul>
 					</div>
+				</div>
+				<div class="col-md-2">
 					<input id="schuif" type="checkbox" checked data-toggle="toggle" data-on="Herkomst" data-off="Bestemming" data-onstyle="warning" data-offstyle="danger">
-					<div id="slider" style="width:400px;height:10px; type="range";min="2011";max="2015"step="1"value="2015"></div>
-					<div style="height:40px;"></div>
+				</div>
+				<div class="col-md-2">
+					<div id="slider" style="width:350px;height:10px; type="range";min="2011";max="2015"step="1"value="2015"></div>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
 					<div id="map_netherlands" style="width:550px;height:500px;">
 						<h4 id="map_title"></h4>
 					</div>
@@ -70,6 +86,10 @@ Lysanne van Beek
 				</div>
 			</div>
 		</div>
-		<div><br><br><br>Lysanne van Beek, 10544259<br><i>Data source:</i> https://duo.nl/open_onderwijsdata/databestanden/stroom/doorstroom-3.jsp </div>
+		<footer>
+			<div class="footer">
+				Copyright &copy; Lysanne van Beek 2017
+			</div>
+		</footer>
 	</body>
 </html>
