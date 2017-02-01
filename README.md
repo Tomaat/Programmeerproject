@@ -1,41 +1,33 @@
-###Uit welke gemeentes komen eerstejaarsstudenten die naar het hoger onderwijs gaan?
-###Voorstel programmeertheorie
-
+####Herkomst, bestemming en profielkeuze van eerstejaarsstudenten in het WO
 ####Lysanne van Beek
 ####10544259
 
-Het probleem dat opgelost wordt voor de gebruiker is dat het inzichtelijk gemaakt wordt
-per stad met een (of meerdere) instelling(en)voor hoger onderwijs waar hun eerstejaarsstudenten
-vandaan komen. Blijven de meeste studenten in de buurt van de plek waar ze hun examen hebben gedaan?
-Zijn er verschillen tussen steden in het aantal studenten met bepaalde profielen?
-Deze visualisatie zal dit hopelijk verhelderen.
+Het doel van deze visualisatie is het inzichtelijk gemaakt wordt waar studenten
+in studentensteden vandaan komen, waar per gemeente studenten gaan studeren, en welke
+pofielen deze studenten hebben.Blijven de meeste studenten in de buurt van de plek waar 
+ze hun examen hebben gedaan? Zijn er verschillen tussen steden in het aantal studenten 
+met bepaalde profielen? Deze visualisatie verheldert dit.
 
-De features om dit mogelijk te maken zijn:
-- Een kaart van Nederland met een bolletje bij elke stad waar een universiteit (MVP) en/of hbo (optional) is.
-- Als er op een bolletje geklikt (interactie 1) wordt verschijnen er:
-	- op de kaart een heat map waarbij per gemeente de kleur aangeeft hoeveel studenten uit die gemeente
-	in de aangeklikte stad zijn gaan studeren(MVP);
-	- een bar chart met de 5 gemeentes waar de meeste studenten vandaan komen die in die stad zijn gaan studeren (MVP) ;
-	- een pie chart met de verdeling van profielen van de studenten uit die stad (MVP).
-- Met behulp van een drop down menu kunnen er verschillende jaren geselecteerd worden (interactie 2)(MVP);
-- Met behulp van een ander drop down menu kan er gekozen worden om alleen HBO, WO of beide
-niveaus te laten zien (optional).
-- Bij het openen van de pagina zijn de default settings de kaart met bolletjes op elke studentenstad (maar zonder
-stromen), een bar graph met de 5 gemeentes waar in totaal de meeste studenten vandaan komen, en in de pie chart
-de verdeling van profielen van alle studenten. Dit is van het meest recente jaar.
+De volgende elementen maken dit mogelijk:
+- Een kaartje van Nederland die de herkomst of bestemming van studenten laat zien;
+- Een bar graph die de top vijf van bestemmingen of herkomstgemeentes laat zien;
+- Een pie chart die de gekozen profielen van leerlingen laat zien.
+
+De visualisaties kunnen verschillende soorten input krijgen:
+- Met behulp van de slider kan data van 2011 tot en met 2015 ingeladen worden;
+- Met de toggle knop kan gekozen worden om de herkomst (waar komen studenten in
+deze studentenstad vandaan) of de bestemming (waar gaan leerlingen uit deze gemeente
+studeren) te zien.
+- Als met de toggle 'Herkomst' is gekozen, kunnen met behulp van een dropdown menu de
+verschillende studentensteden aangeklikt worden.
+- Als met de toggle 'Bestemming' is gekozen kan er op de gemeentes op de kaart geklikt
+worden om te zien waar leerlingen uit deze gemeente gaan studere. De dropdown is dan
+disables.
 
 ![](doc/20170113_113835.jpg)
 
-Voor deze visualisatie zal een dataset van DUO gebruikt worden waarin o.a. de gemeentes waar
-eerstejaarsstudenten eindexamen hebben gedaan, hun profielen en de BIN nummers van de onderwijsinstellingen waar
-ze zijn gaan studeren zijn opgenomen: https://duo.nl/open_onderwijsdata/databestanden/stroom/doorstroom-3.jsp 
-Om de BIN nummers naar gemeentes om te zetten zal nog gezocht moeten worden naar een bestand dat
-de BIN nummers en corresponderende onderwijsinstellingen en gemeentes bevat.
-
-legenda pie chart:
-http://bl.ocks.org/wayneminton/a12b563819b04a3555aa
-slider:
-http://thematicmapping.org/playground/d3/d3.slider/
-https://github.com/MasterMaps/d3-slider/blob/master/index.html
-Tooltips
-http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js
+Voor het creeëren van deze visualisatie is gebruik gemaakt van de volgende bronnen:
+- De data:  https://duo.nl/open_onderwijsdata/databestanden/stroom/doorstroom-3.jsp
+- De tooltips: http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js
+- De slider: https://github.com/MasterMaps/d3-slider/blob/master/index.html
+- De legenda van de pie chart: http://bl.ocks.org/wayneminton/a12b563819b04a3555aa
