@@ -8,6 +8,8 @@ pofielen deze studenten hebben.Blijven de meeste studenten in de buurt van de pl
 ze hun examen hebben gedaan? Zijn er verschillen tussen steden in het aantal studenten 
 met bepaalde profielen? Deze visualisatie verheldert dit.
 
+![](doc/Knipsel.jpg)
+
 De volgende elementen maken dit mogelijk:
 - Een kaartje van Nederland die de herkomst of bestemming van studenten laat zien;
 - Een bar graph die de top vijf van bestemmingen of herkomstgemeentes laat zien;
@@ -22,9 +24,7 @@ studeren) te zien.
 verschillende studentensteden aangeklikt worden.
 - Als met de toggle 'Bestemming' is gekozen kan er op de gemeentes op de kaart geklikt
 worden om te zien waar leerlingen uit deze gemeente gaan studere. De dropdown is dan
-disables.
-
-![](doc/20170113_113835.jpg)
+disabled.
 
 Voor het creeëren van deze visualisatie is gebruik gemaakt van de volgende bronnen:
 Voor de data:
