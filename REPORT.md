@@ -16,33 +16,33 @@ welke profielen in welke steden vaker voorkomen.
 ![](doc/Knipsel.JPG)
 
 ###Technisch ontwerp
-De code bevat de volgende elementen: globals, algemene
-functies,  functies om de bar graph en pie chart te initialiseren en up te daten
-(initPiePlot en initBarplot), verschillende elementen die de dataset kunnen updaten, 
-namelijk een dropdown menu; een toggle; een 'click-map' en een slider; een functie
-om data in het juiste format te zetten (loadData), een functie om de juiste dataset 
+De code bevat de volgende elementen: globals; algemene
+functies; functies om de bar graph en pie chart te initialiseren en up te daten
+(initPiePlot en initBarplot); verschillende elementen die de dataset kunnen updaten, 
+namelijk een dropdown menu, een toggle, een 'click-map' en een slider; een functie
+om data in het juiste format te zetten (loadData); een functie om de juiste dataset 
 te selecteren en in te laden (selectDataset) en een functie om de datamap te maken
 (makeMap). 
 
 De bovenstaande componenten zijn sterk met elkaar verweven. Als de pagina voor het eerst
 geladen wordt, wordt de data van 2011 ingeladen, is de geselecteerde stad Amsterdam,
-en wordt de herkomst getoond van studenten die hier studeren getoond. Dit gebeurt door eerst
+en wordt de herkomst van studenten die hier studeren getoond. Dit gebeurt door eerst
 met de functie loadData de data in het juiste formaat te zetten om het in te laden in de datamap.
 Vervolgens worden de functies makeMap, updatePiePlot en updateBarplot aangeroepen om de map,
 pie plot en bar graph te maken en updaten.
 
 Als de slider gebruikt wordt, wordt de functie selectDataset aangeroepen, die afhankelijk van 
 de instelling van de toggle de juiste dataset selecteert en opslaat in str. Vervolgens wordt 
-in dezelfde functie de geselecteerde data ingeladen en de map, pie plot en bar graph geüpdatetet.
+in dezelfde functie de geselecteerde data ingeladen en de map, pie plot en bar graph geüpdatet.
 
 Bij het klikken op een stad van het dropdown menu wordt de omlijning van de eerder geselecteerde
 gemeente weer 'normaal' gemaakt, waarna de nieuw geklikte gemeente opgeslagen wordt, de functie
 selectDataset aangroepen wordt (zoals boven) en de gemeente een dikke, paarse omlijning krijgt. 
 
 Bij het verschuiven van de toggle kan als 'Herkomst' selecteerd is het dropwdown menu gewoon 
-selecteerd worden. De standaard gemeente die hier geselecteerd is, is Amsterdam. Dit omdat als
+selecteerd worden. De standaard gemeente die hier geselecteerd is, is Amsterdam. Dit omdat 
 van 'Bestemming' teruggeschakelt kan worden naar 'Herkomst' en als er dan een gemeente geselecteerd
-is zonder universiteit (zoals bijvoorbeeld Den Haag) ontstaan er errors. Als bij de toggle echter 
+is zonder universiteit (zoals bijvoorbeeld Den Haag) ontstaan er errors. Als met de toggle  
 'Bestemming' is geselecteerd kan er niet op het dropdown menu geklikt worden (maar moet er op de 
 kaart geklikt worden). In beide gevallen wordt vervolgens de functie selectDataset aangeroepen. 
 
@@ -85,14 +85,14 @@ dat er te veel zijn om de visualisatie mooi en overzichtelijk te houden.
 Ik wilde graag zowel een kaartje als een bar graph maken van de aantallen studenten per
 gemeente. Dit lijkt hetzelfde doel te dienen, maar dat is niet zo. De bar graph laat in
 één oogopslag de vijf gemeentes zien waar de meeste studenten naartoe gaan of vandaan
-komen. Je dankzij de hoogte van de balken makkelijk zien om hoeveel studenten het gaat, 
+komen. Je kan dankzij de hoogte van de balken makkelijk zien om hoeveel studenten het gaat 
 en welke gemeentes populairder zijn dan anderen. De kaart laat echter voornamelijk de
 spreiding van studenten zien: hoe verspreiden studenten zich over het land als ze gaan
 studeren? Zo zie je goed dat de meeste mensen die in Groningen gaan studeren uit het 
 noorden en midden van het land komen, terwijl dit voor Utrecht veel meer gespreid is.
 
 Achteraf had ik als er meer tijd was geweest nog graag een zoekbalk gemaakt voor het
-kiezen van de gemeentes waarvoor je wil zien waar leerlingen zijn gaan studeren. Nu
+kiezen van de gemeentes waarvoor je wil zien waar leerlingen zijn gaan studeren (de 'bestemming'). Nu
 moet er op de kaart geklikt worden, terwijl je niet altijd weet waar een gemeente precies
 ligt. Ook was een kaartje maken met de bestemmingsgemeentes misschien niet de beste optie:
 er zijn immers maar 11 gemeentes waar een universiteit is, dus het overgrote gedeel van
