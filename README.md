@@ -14,6 +14,8 @@ De volgende elementen maken dit mogelijk:
 - Een kaartje van Nederland die de herkomst of bestemming van studenten laat zien;
 - Een bar graph die de top vijf van bestemmingen of herkomstgemeentes laat zien;
 - Een pie chart die de gekozen profielen van leerlingen laat zien.
+- Alle bovenstaande elementen hebben tooltips die verschijnen zodra er over een
+gemeente/bar/pie stukje wordt gehooverd. 
 
 De visualisaties kunnen verschillende soorten input krijgen:
 - Met behulp van de slider kan data van 2011 tot en met 2015 ingeladen worden;

@@ -13,7 +13,7 @@ Dit alles is te zien voor de jaren 2011-2015. Hiermee is het makkelijk om inzich
 te verkrijgen in de spreiding van studenten, waar leerlingen gaan studeren, en 
 welke profielen in welke steden vaker voorkomen.
 
-![](doc/Knipsel.jpg)
+![](doc/Knipsel.JPG)
 
 ###Technisch ontwerp
 De code bevat de volgende elementen: globals, algemene
