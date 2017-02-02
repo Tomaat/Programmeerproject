@@ -1,1 +1,0 @@
-D:\Users\Ysbrand\Lysanne\Programmeerproject\visualisation>python -m SimpleHTTPServer 8888
