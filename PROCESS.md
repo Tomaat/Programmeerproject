@@ -131,4 +131,5 @@ niet gelukt.
 
 ####Dag 19
 - Report afgeschreven
-- 
+- 'Geen data beschikbaar' als er geen data is
+- Laatste dingetjes in opmaak mooier gemaakt 
