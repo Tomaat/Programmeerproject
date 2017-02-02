@@ -67,7 +67,8 @@ fill: green;
 	background-color: antiquewhite;
 	text-align: center;
 	font-family: "Helvetica Neue";
-	height: 30px;
+	height: 35px;
+	margin-bottom: 5px;
  }
  
  .hoverinfo {

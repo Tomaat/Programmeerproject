@@ -14,11 +14,39 @@ te verkrijgen in de spreiding van studenten, waar leerlingen gaan studeren, en
 welke profielen in welke steden vaker voorkomen.
 
 ###Technisch ontwerp
-De code bevat de volgende elementen (van onder naar boven): globals, algemene
-functies,  functies om de bar graph en pie chart te initialiseren en up te daten, 
-dropdown, toggle, slider, dataset selecteren en updaten, dataset inladen, datamap maken.
+De code bevat de volgende elementen: globals, algemene
+functies,  functies om de bar graph en pie chart te initialiseren en up te daten
+(initPiePlot en initBarplot), verschillende elementen die de dataset kunnen updaten, 
+namelijk een dropdown menu; een toggle; een 'click-map' en een slider; een functie
+om data in het juiste format te zetten (loadData), een functie om de juiste dataset 
+te selecteren en in te laden (selectDataset) en een functie om de datamap te maken
+(makeMap). 
 
-De bovenstaande componenten zijn sterk met elkaar verweven. 
+De bovenstaande componenten zijn sterk met elkaar verweven. Als de pagina voor het eerst
+geladen wordt, wordt de data van 2011 ingeladen, is de geselecteerde stad Amsterdam,
+en wordt de herkomst getoond van studenten die hier studeren getoond. Dit gebeurt door eerst
+met de functie loadData de data in het juiste formaat te zetten om het in te laden in de datamap.
+Vervolgens worden de functies makeMap, updatePiePlot en updateBarplot aangeroepen om de map,
+pie plot en bar graph te maken en updaten.
+
+Als de slider gebruikt wordt, wordt de functie selectDataset aangeroepen, die afhankelijk van 
+de instelling van de toggle de juiste dataset selecteert en opslaat in str. Vervolgens wordt 
+in dezelfde functie de geselecteerde data ingeladen en de map, pie plot en bar graph geüpdatetet.
+
+Bij het klikken op een stad van het dropdown menu wordt de omlijning van de eerder geselecteerde
+gemeente weer 'normaal' gemaakt, waarna de nieuw geklikte gemeente opgeslagen wordt, de functie
+selectDataset aangroepen wordt (zoals boven) en de gemeente een dikke, paarse omlijning krijgt. 
+
+Bij het verschuiven van de toggle kan als 'Herkomst' selecteerd is het dropwdown menu gewoon 
+selecteerd worden. De standaard gemeente die hier geselecteerd is, is Amsterdam. Dit omdat als
+van 'Bestemming' teruggeschakelt kan worden naar 'Herkomst' en als er dan een gemeente geselecteerd
+is zonder universiteit (zoals bijvoorbeeld Den Haag) ontstaan er errors. Als bij de toggle echter 
+'Bestemming' is geselecteerd kan er niet op het dropdown menu geklikt worden (maar moet er op de 
+kaart geklikt worden). In beide gevallen wordt vervolgens de functie selectDataset aangeroepen. 
+
+Nadat de map gemaakt is (done), kan als 'Bestemming' geselecteerd is op de kaart geklikt worden
+om een gemeente te selecteren. Ook hier worden weer de randen van de gemeentes aangepast en 
+de functie selectDataset aangroepen. 
 
 ###Uitdagingen en veranderingen
 Er zijn een aantal elementen die in de uiteindelijke visualisatie anders zijn dan

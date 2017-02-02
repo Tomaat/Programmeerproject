@@ -114,12 +114,21 @@ een bar of pie chart maken.
 	- Misschien een kort uitlegje op de pagina hoe je de visualisatie kan gebruiken
 
 ####Dag 16
-- Begonnen aan het verslag
-- Bezig geweest om als je op een gemeente klikt, je ziet waar mensen zijn gaan studeren. Is nog
+- Begonnen aan het report
+- Bezig geweest om als je op een gemeente klikt je ziet waar mensen zijn gaan studeren. Is nog
 niet gelukt.
 
 ####Dag 17
 - Bestemming werkt nu als je op een gemeente klikt.
 - Legenda voor pie chart gemaakt
 - Kleuren van de legenda veranderd (nu meer verschillend)
-	
+
+####Dag 18
+- Report geschreven (behalve technisch deel)
+- Code nagelopen, functienamen verbeterd en comments toegevoegd
+- Opmaak van pagina verbeterd (header en footer)
+- Geselecteerde gemeente heeft een dikke, paarse grens
+
+####Dag 19
+- Report afgeschreven
+- 

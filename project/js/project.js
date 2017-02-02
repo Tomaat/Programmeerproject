@@ -4,7 +4,7 @@
     10544259 
 **/
 // globals
-var data_form, map, gemeente="AMSTERDAM",year, updateBarplot, update_pieplot, plaats="Herkomst";
+var dataForm, map, gemeente="AMSTERDAM", year, updateBarplot, updatePiePlot, plaats="Herkomst";
 
 // function to turn "GEMEENTE" into "Gemeente"
 function toSentenceCase(str) {
@@ -29,7 +29,7 @@ function nonActiveBorder() {
 	element.style["stroke-width"] = "0.4px"
 }
 	
-// function to make initiate pie plot
+// function to make initiate pie plot, returns a function 'updatePiePlot'
 function initPieplot() {
 	var width_pie = 470,
 		height_pie = 250,
@@ -67,7 +67,7 @@ function initPieplot() {
 	svg.call(tip);
 
 	// function to update pie plot
-	function update_pieplot(datapoint) {
+	function updatePiePlot(datapoint) {
 		
 		svg[0][0].innerHTML = "";
 		var data_profielen = []
@@ -79,6 +79,7 @@ function initPieplot() {
 			data_profielen[data_profielen.length] = {"label": key, "value": datapoint[key], "color": colors[i++]};
 		}
 
+		// draw the pie pieces, depending on the data
 		var g = svg.selectAll(".arc")
 			.data(pie(data_profielen))
 		.enter().append("g")
@@ -99,6 +100,7 @@ function initPieplot() {
 			.style("font-size", "12px")
 			.call(d3.legend);
 		
+		// make title
 		if (plaats == "Herkomst") {
 			document.getElementById("pie_title").innerHTML = "Profielen die studenten studerend in " + toSentenceCase(gemeente) + "<br> op de middelbare school hadden in " + year;
 		}
@@ -106,10 +108,10 @@ function initPieplot() {
 			document.getElementById("pie_title").innerHTML = "Profielen van leerlingen uit " + toSentenceCase(gemeente) + "<br> op de middelbare school in " + year;
 		}
 	}
-	return update_pieplot
+	return updatePiePlot
 }
 
-// function to initiate bar graph
+// function to initiate bar graph, returns a function 'updateBarplot'
 function initBarplot() {
 	var margin = {top: 10, right: 10, bottom: 20, left: 50},
 		width = 500 - margin.left - margin.right,
@@ -209,6 +211,7 @@ function initBarplot() {
 			.on('mouseover', tip.show)
 			.on('mouseout', tip.hide);
 
+		// make title
 		if (plaats == "Herkomst") {
 			document.getElementById("bar_title").innerHTML = "Top 5 van gemeentes waar eerstejaars <br>studerend in " + toSentenceCase(gemeente) + " vandaan komen in " + year;
 		}
@@ -220,8 +223,9 @@ function initBarplot() {
 }
 
 window.onload = function() {
+	
 	// save return values
-	update_pieplot = initPieplot();
+	updatePiePlot = initPieplot();
 	updateBarplot = initBarplot()
     
 	// when dropdown is clicked, change gemeente
@@ -271,9 +275,9 @@ window.onload = function() {
 		
 		// update the selected dataset
 		d3.json(str, function(error,data) {
-			load_data(error,data);
-			map.updateChoropleth(data_form);
-			update_pieplot(data[gemeente]["profiel"]);
+			loadData(error,data);
+			map.updateChoropleth(dataForm);
+			updatePiePlot(data[gemeente]["profiel"]);
 			updateBarplot(data[gemeente]["oorsprong"]);
 			
 			// make map title
@@ -286,40 +290,41 @@ window.onload = function() {
 	}
 
 	// function to load in the data
-	function load_data(error, data) {
-		data_form = {};
-		var selected_data = data[gemeente]["oorsprong"];
+	function loadData(error, data) {
+		dataForm = {};
+		var selectedData = data[gemeente]["oorsprong"];
 		
-		for (var key in selected_data) {
+		// add fillKey to the data, depending on amount of students
+		for (var key in selectedData) {
 		
 			var limits = [1,5,10,25,50,100,200,400];
 			fillKey = '0';
-			if (selected_data[key] >= limits[0] && selected_data[key] < limits[1]) {  fillKey = '1 - 5' }
-			else if (selected_data[key] >= limits[1] && selected_data[key] < limits[2]) {  fillKey = '5 - 10' }
-			else if (selected_data[key] >= limits[2] && selected_data[key] < limits[3]) {  fillKey = '10 - 20' }
-			else if (selected_data[key] >= limits[3] && selected_data[key] < limits[4]) {  fillKey = '20 - 50' }
-			else if (selected_data[key] >= limits[4] && selected_data[key] < limits[5]) {  fillKey = '50 - 100' }
-			else if (selected_data[key] >= limits[5] && selected_data[key] < limits[6]) {  fillKey = '100 - 200' }
-			else if (selected_data[key] >= limits[6] && selected_data[key] < limits[7]) {  fillKey = '200 - 300' }
-			else if (selected_data[key] >= limits[7] ) {  fillKey = '300 +'; }
 			
-			data_form[key] = {students: selected_data[key], fillKey: fillKey}
+			if (selectedData[key] >= limits[0] && selectedData[key] < limits[1]) {  fillKey = '1 - 5' }
+			else if (selectedData[key] >= limits[1] && selectedData[key] < limits[2]) {  fillKey = '5 - 10' }
+			else if (selectedData[key] >= limits[2] && selectedData[key] < limits[3]) {  fillKey = '10 - 20' }
+			else if (selectedData[key] >= limits[3] && selectedData[key] < limits[4]) {  fillKey = '20 - 50' }
+			else if (selectedData[key] >= limits[4] && selectedData[key] < limits[5]) {  fillKey = '50 - 100' }
+			else if (selectedData[key] >= limits[5] && selectedData[key] < limits[6]) {  fillKey = '100 - 200' }
+			else if (selectedData[key] >= limits[6] && selectedData[key] < limits[7]) {  fillKey = '200 - 300' }
+			else if (selectedData[key] >= limits[7] ) {  fillKey = '300 +'; }
+			
+			dataForm[key] = {students: selectedData[key], fillKey: fillKey}
 		}
 	}
-
 
 	// default data setting
 	d3.json("/../../data/2011_data_herkomst.json", function(error, data) {
 		year = 2011;
-		load_data(error,data);
-		make_map();
-		update_pieplot(data[gemeente]["profiel"]);
+		loadData(error,data);
+		makeMap();
+		updatePiePlot(data[gemeente]["profiel"]);
 		updateBarplot(data[gemeente]["oorsprong"]);
 		document.getElementById("map_title").innerHTML = "Herkomst van studenten studerend in " + toSentenceCase(gemeente) + ' in ' + year;
 	});
 	
 	// make the datamaps map
-	function make_map() {
+	function makeMap() {
 		map = new Datamap({
 			element: document.getElementById('map_netherlands'),
 			scope: "gemeentes",
@@ -327,23 +332,25 @@ window.onload = function() {
 				dataUrl: '../../data/gemeentes3.topojson',
 				borderWidth: 0.4,
 				borderColor: '#4F4F4F',
+				// make tooltip, depending on 'herkomst' or 'bestemming'
 				popupTemplate: function(geography, data) {
 							if (plaats == "Herkomst"){
 								if (!data) {
 									return '<div class="hoverinfo"> <strong>' + geography.properties.name + '</strong> <br> Oorsprong van <strong> 0 </strong> studenten'; 
 								} else {
-									return '<div class="hoverinfo"> <strong>' + geography.properties.name + '</strong> <br> Oorsprong van <strong>' + data_form[geography.id].students + '</strong> studenten';
+									return '<div class="hoverinfo"> <strong>' + geography.properties.name + '</strong> <br> Oorsprong van <strong>' + dataForm[geography.id].students + '</strong> studenten';
 								}
 							} else {
 								if (!data) {
 									return '<div class="hoverinfo"> <strong>' + geography.properties.name + '</strong> <br><strong> 0 </strong> studenten gaan hier studeren'; 
 								} else {
-									return '<div class="hoverinfo"> <strong>' + geography.properties.name + '</strong> <br> <strong>' + data_form[geography.id].students + '</strong> studenten gaan hier studeren';
+									return '<div class="hoverinfo"> <strong>' + geography.properties.name + '</strong> <br> <strong>' + dataForm[geography.id].students + '</strong> studenten gaan hier studeren';
 								}
 							}
 				}
 			},
 			
+			// get the map the way we want it
 			setProjection: function(element) {
 				var projection = d3.geo.mercator()
 				 .scale(6300)
@@ -370,10 +377,11 @@ window.onload = function() {
 				'300 +': '#b10026',
 				defaultFill: 'white'
 			},
-			data: data_form,
+			data: dataForm,
 			done: function() {
 					activeBorder();
 					
+					// make townships clickable
 					$(function() {
 						$(".datamaps-subunit").click(function(evt) {
 							if (plaats == "Bestemming") {
