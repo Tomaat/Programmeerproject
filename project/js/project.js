@@ -107,12 +107,17 @@ function initPieplot() {
 		else if (plaats == "Bestemming") {
 			document.getElementById("pie_title").innerHTML = "Profielen van leerlingen uit " + toSentenceCase(gemeente) + "<br> op de middelbare school in " + year;
 		}
+
+		if (!datapoint) {
+			svg.append("text").attr("x", -40).attr("y", -10).text("Geen data om weer te geven");
+		}	
 	}
 	return updatePiePlot
 }
 
 // function to initiate bar graph, returns a function 'updateBarplot'
 function initBarplot() {
+	
 	var margin = {top: 10, right: 10, bottom: 20, left: 50},
 		width = 500 - margin.left - margin.right,
 		height = 250 - margin.top - margin.bottom;
@@ -156,6 +161,7 @@ function initBarplot() {
 
 	// function to update the bargraph
 	function updateBarplot(datapoint) {
+	
 		svg[0][0].innerHTML = "";
 		
 		// select 5 townships with highest number of students and put them in an array of objects
@@ -218,6 +224,11 @@ function initBarplot() {
 		else if (plaats == "Bestemming") {
 			document.getElementById("bar_title").innerHTML = "Top 5 van gemeentes waar leerlingen <br>uit " + toSentenceCase(gemeente) + " gaan studeren in " + year;
 		}
+
+		if (five[0].studenten == 0) {
+			svg.append("text").attr("x", 90).attr("y", 90).text("Geen data om weer te geven");
+		}	
+		
 	}
 	return updateBarplot
 }
